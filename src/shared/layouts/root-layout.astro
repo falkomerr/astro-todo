@@ -1,13 +1,18 @@
 ---
 import { Header } from '@/widgets/header';
 const { title } = Astro.props;
+import Icon from './favicon.ico';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="A simple todo list with authorization built on effector, astro and react"
+    />
+    <link rel="icon" href={Icon} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
